@@ -3,7 +3,7 @@
 @font-face {
     font-family: "PT Sans";
     font-style: normal;
-    src: url("https://fonts.googleapis.com/css2?family=PT+Sans");
+    src: url("/fonts/PTSans-Regular.ttf")
 }
 
 :root {
