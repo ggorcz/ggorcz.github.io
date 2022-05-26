@@ -2,7 +2,7 @@
  */
 @font-face {
     font-family: PT Sans;
-    src: url('/font/PTSans-Regular.ttf');
+    src: url('https://fonts.googleapis.com/css2?family=PT+Sans');
 }
 
 :root {
