@@ -1,5 +1,10 @@
 /* @import url('https://fonts.googleapis.com/css2?family=PT+Sans');
  */
+@font-face {
+    font-family: PT Sans;
+    src: url('https://fonts.googleapis.com/css2?family=PT+Sans');
+}
+
 :root {
     --white: #FFF;
     --black: #000;
@@ -16,8 +21,6 @@
 
 html {
     scroll-behavior: smooth;
-    font-family: "PT Sans", sans-serif;
-
 }
 
 body {
