@@ -96,7 +96,6 @@ nav ul li a {
     font-weight: 500;
     padding: 8px 15px;
     border-radius: 5px;
-    letter-spacing: 1px;
     transition: all 0.3s ease;
     font-weight: 600;
 }
@@ -448,12 +447,6 @@ section#hitel {
     nav .menu-btn i {
         display: block;
         color: var(--black);
-    }
-
-    .logo {
-        color: var(--black);
-        font-size: 35px;
-        font-weight: 600;
     }
 
     #click:checked~.menu-btn i:before {
