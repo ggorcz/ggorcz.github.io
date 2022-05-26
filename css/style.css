@@ -452,6 +452,8 @@ section#hitel {
 
     .logo {
         color: var(--black);
+        font-size: 35px;
+        font-weight: 600;
     }
 
     #click:checked~.menu-btn i:before {
@@ -463,7 +465,7 @@ section#hitel {
         position: fixed;
         top: 60px;
         left: -100%;
-        background-color: var(--light-grey);
+        background-color: var(--white);
         height: 100vh;
         width: 100%;
         text-align: center;
@@ -478,7 +480,6 @@ section#hitel {
     nav ul li {
         width: 100%;
         margin: 40px 0;
-
         align-items: center;
         justify-content: center;
     }
@@ -491,6 +492,7 @@ section#hitel {
         font-size: 20px;
         transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
         border: none;
+        box-shadow: none;
     }
 
     #click:checked~ul li a {
@@ -504,5 +506,6 @@ section#hitel {
         background: none;
         color: var(--gold);
         border: none;
+        box-shadow: none;
     }
 }
