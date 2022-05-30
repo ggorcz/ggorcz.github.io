@@ -35,18 +35,18 @@ p {
 
 h1 {
     font-size: 3.5em;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 1em;
 }
 
 h2 {
     font-size: 1.7em;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 h3 {
     font-size: 1.3em;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 1.1em;
 }
 
@@ -57,7 +57,7 @@ a {
 .logo {
     color: var(--black);
     font-size: 35px;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .logo span {
@@ -435,17 +435,6 @@ section#hitel {
 
 /* Méretezés */
 @media (max-width: 1000px) {
-
-    h1,
-    .logo {
-        letter-spacing: -2px;
-        font-weight: 900;
-    }
-
-    h3 {
-        letter-spacing: -1.8px;
-        font-weight: 900;
-    }
 
     nav {
         padding: 0 40px 0 50px;
