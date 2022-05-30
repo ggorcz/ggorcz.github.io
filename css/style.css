@@ -160,17 +160,22 @@ section#kezdolap {
     min-height: 100vh;
     width: 100%;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 .landing .content {
-    width: 600px;
     align-self: center;
+    flex: 1;
+
 }
 
-.landing p {
-    padding: 40px 0 40px 0;
+.landing .bg {
+    align-self: center;
+    flex: 1;
+}
+
+.landing .bg img {
+    min-width: 400px;
 }
 
 .button {
@@ -217,33 +222,27 @@ section#kezdolap {
     transform: translate(0, 0);
 }
 
-.landing .bg {
-    padding: 50px 0 0 0;
-    align-self: center;
-    width: calc(100% - 600px);
-}
-
 .landing .social {
     align-self: center;
-    margin: 0 auto;
+    min-width: 80px;
 }
 
-.landing .social i {
+.social i {
     text-shadow: rgba(67, 71, 85, 0.27) 0 0 0.03em, rgba(90, 125, 188, 0.05) 0 0.03em 1em;
 }
 
-.landing .social li {
+.social li {
     list-style: none;
     padding: 10px;
 }
 
-.landing .social li a {
+.social li a {
     text-decoration: none;
     color: var(--gold);
     font-size: 2em;
 }
 
-.landing .social li a:hover {
+.social li a:hover {
     color: var(--white);
     background-color: var(--gold);
 }
@@ -500,5 +499,11 @@ section#hitel {
         color: var(--gold);
         border: none;
         box-shadow: none;
+    }
+
+    .landing .social ul {
+        display: inline-flex;
+        flex-wrap: nowrap;
+        width: 100vw;
     }
 }
