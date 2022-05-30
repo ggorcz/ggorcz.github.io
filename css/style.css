@@ -436,8 +436,10 @@ section#hitel {
 /* Méretezés */
 @media (max-width: 1000px) {
 
-    html {
-        letter-spacing: -3px;
+    h1,
+    h2,
+    .logo {
+        letter-spacing: -2px;
     }
 
     nav {
