@@ -224,7 +224,6 @@ section#kezdolap {
 
 .landing .social {
     align-self: center;
-    min-width: 80px;
 }
 
 .social i {
@@ -436,6 +435,11 @@ section#hitel {
 
 /* Méretezés */
 @media (max-width: 1000px) {
+
+    html {
+        letter-spacing: -3px;
+    }
+
     nav {
         padding: 0 40px 0 50px;
         background-color: var(--white);
