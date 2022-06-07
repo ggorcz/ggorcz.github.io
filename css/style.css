@@ -160,6 +160,7 @@ section#kezdolap {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    row-gap: 30px;
 }
 
 .landing .content {
