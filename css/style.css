@@ -165,7 +165,11 @@ section#kezdolap {
 .landing .content {
     align-self: center;
     flex: 1;
+}
 
+.landing .content p {
+    padding-bottom: 60px;
+    margin-top: 30px;
 }
 
 .landing .bg {
@@ -184,8 +188,6 @@ section#kezdolap {
     padding: 10px 30px;
     text-align: center;
     color: var(--white);
-    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.1em, rgba(90, 125, 188, 0.05) 0px 0.1em 1em;
-
 }
 
 .button span {
@@ -423,7 +425,7 @@ section#hitel a {
 @media (max-width: 1000px) {
 
     nav {
-        padding: 0 40px 0 50px;
+        padding: 0 40px 0 35px;
         background-color: var(--white);
     }
 }
@@ -487,9 +489,30 @@ section#hitel a {
         box-shadow: none;
     }
 
+    .landing .content {
+        padding-top: 30px;
+    }
+
+    .landing .bg img {
+        width: 100%;
+    }
+
+
     .landing .social ul {
         display: inline-flex;
         flex-wrap: nowrap;
         width: 100vw;
+    }
+
+    .wrapper {
+        width: 100%;
+        padding: 0 35px 0 35px;
+    }
+
+    .bemutatkozas {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap-reverse;
+        padding: 1em 1em 0 1em;
     }
 }
