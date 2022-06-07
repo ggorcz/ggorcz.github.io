@@ -28,13 +28,12 @@ body {
 }
 
 p {
-    font-size: calc(1vw + .1em);
     font-weight: 400;
     line-height: 1.2em;
 }
 
 h1 {
-    font-size: 3.5em;
+    font-size: 3.2em;
     font-weight: 700;
     line-height: 1em;
 }
@@ -309,6 +308,11 @@ section#hitel {
     color: var(--black);
 }
 
+section#hitel a {
+    color: var(--black);
+    margin: 0 auto;
+}
+
 .grid-container {
     width: 100%;
     display: flex;
@@ -320,13 +324,15 @@ section#hitel {
 
 .grid-item {
     border-radius: 5px;
-    padding: 20px;
     margin: 0 auto;
     line-height: 2em;
     width: 350px;
+    min-height: 210px;
     box-shadow: rgba(67, 71, 85, 0.27) 0 0 0.25em, rgba(90, 125, 188, 0.05) 0 0.25em 1em;
     border-bottom: 3px solid var(--gold);
     transition: 0.3s ease-in-out;
+    overflow: hidden;
+    padding: 20px;
 }
 
 .grid-item i {
@@ -334,7 +340,6 @@ section#hitel {
     padding-bottom: 20px;
     font-size: 4em;
     color: var(--gold);
-    text-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.03em, rgba(90, 125, 188, 0.05) 0px 0.03em 1em;
     transition: 0.3s ease-in-out;
 }
 
@@ -344,41 +349,22 @@ section#hitel {
     -webkit-text-stroke-color: var(--gold);
 }
 
-.grid-item:hover {
-    margin-top: -5px;
-}
-
 .grid-item p {
     line-height: 1.2em;
     color: var(--dark-grey) !important;
     padding: 10px 0 0 0;
 }
 
-.grid-item a {
-    top: 10px;
-    position: relative;
-    display: inline-block;
-    position: relative;
-    color: var(--gold);
-}
-
-.grid-item a:hover {
-    text-decoration: underline;
-}
-
 .center-text {
     margin: 0 auto;
     width: fit-content;
-    padding: 100px;
+    text-align: center;
 }
 
 .wrapper span {
     border-radius: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
     background-color: var(--gold);
     color: var(--light-grey);
-    box-shadow: rgba(67, 71, 85, 0.27) 0 0 0.1em, rgba(90, 125, 188, 0.05) 0 0.1em 1em;
 }
 
 .count {
@@ -388,7 +374,7 @@ section#hitel {
     height: 1em;
     line-height: 1em;
     font-weight: bold;
-    font-size: 5em;
+    font-size: 4.5em;
 }
 
 .count:after {
@@ -425,7 +411,7 @@ section#hitel {
 }
 
 .help a {
-    color: var(--gold);
+    color: var(--gold) !important;
     align-items: center;
 }
 
