@@ -1,259 +1,366 @@
 <!DOCTYPE html>
-<html lang="hu">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="...">
-    <link rel="canonical" href="https://hitel.es/">
-    <meta property="og:locale" content="hu_HU">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Kezdőlap">
-    <meta property="og:description" content="...">
-    <meta property="og:url" content="https://hitel.es/">
-    <meta property="og:site_name" content="hitel.es">
-    <meta property="article:publisher" content="https://www.facebook.com/hitel.es">
-    <meta property="article:modified_time" content="2022-03-10T14:01:16+00:00">
-    <meta property="og:image" content="facebook alapkép link">
-    <meta property="og:image:width" content="facebook alapkép méretei">
-    <meta property="og:image:height" content="facebook alapkép méretei">
-    <meta property="og:image:type" content="image/jpeg">
+    <title>hitel.es</title>
+    <link rel="stylesheet" href="./css/style.css">
 
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-
-    <!-- Style -->
+    <!-- Google Fonts - PT Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/animate.css">
 
-    <!-- Ikonok -->
-    <script src="https://kit.fontawesome.com/63e2cff596.js" crossorigin="anonymous"></script>
-    <title>hitel.es</title>
+    <!-- IconScout CDN -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!-- Swiper style-->
+    <link rel="stylesheet" href="./css/swiper.min.css" />
 </head>
 
 <body>
-    <header>
-        <!-- Menü -->
-        <nav>
-            <div class="logo">hitel<span>.</span>es</div>
-            <input type="checkbox" id="click">
-            <label for="click" class="menu-btn">
-                <i class="fas fa-bars"></i>
-            </label>
-            <ul>
-                <li>
-                    <a id="#kezdolap" href="#">Kezdőlap</a>
-                </li>
-                <li>
-                    <a id="#bemutatkozas" href='#bemutatkozas'>Bemutatkozás</a>
-                </li>
-                <li>
-                    <a id="#hitel" href='#hitel'>Hitel</a>
-                </li>
-                <li>
-                    <a id="#bankszamla" href='#bankszamla'>Bankszámla</a>
-                </li>
-                <li>
-                    <a id="#munkaltatoknak" href='#munkaltatoknak'>Munkáltatóknak</a>
-                </li>
-                <li>
-                    <a id="#kapcsolat" href='#kapcsolat'>Kapcsolat</a>
-                </li>
-                <li>
-                    <a href='#blog' target="_blank">Blog</a>
-                </li>
+    <nav>
+        <div class="container nav_container">
+            <a href="index.html" class="logo">hitel<span>.</span>es</a>
+            <ul class="nav_menu">
+                <li><a href="index.html">#Kezdőlap</a></li>
+                <li><a href="bemutatkozas.html">#Bemutatkozás</a></li>
+                <li><a href="hitelek.html">#Hitelek</a></li>
+                <li><a href="kapcsolat.html">#Kapcsolat</a></li>
             </ul>
-        </nav>
+            <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+            <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+        </div>
+    </nav>
+    <!-- =============== End of Navbar =============== -->
+    <header>
+        <div class="container header_container">
+            <div class="header_left">
+                <h1>Hitelesen a pénzügyekről</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, quisquam eius corporis iusto
+                    excepturi non iste temporibus est obcaecati facere?</p>
+                <a href="bemutatkozas.html" class="btn btn-primary">Érdekel</a>
+            </div>
+            <div class="header_rigth">
+                <div class="header_right-image">
+                    <img src="./img/landing2.svg">
+                </div>
+            </div>
+        </div>
     </header>
-    <!-- Kezdőlap -->
-    <section id="kezdolap">
-        <div class="wrapper">
-            <div class="landing">
-                <div class="content">
-                    <h1>hiteles a<br>pénzügyekben
-                    </h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo rem optio officia voluptatibus
-                        dicta nemo alias. Magni quisquam inventore mollitia quia. Rerum excepturi officia vel
-                        doloremque
-                        neque
-                        dolor
-                        modi dolorem itaque facilis aperiam! Amet sed impedit, vitae dolore quo blanditiis
-                        similique, id
-                        quam
-                        consectetur dicta at iste! Laboriosam, exercitationem numquam!</p>
-                    <a aria-label="Érdekel" class="button" data-text="Érdekel" href="#bemutatkozas">
-                        <span><i class="fa-solid fa-chevron-down"></i></span>
-                    </a>
+    <!-- =============== End of Header =============== -->
+    <section class="hitelek">
+        <div class="container hitelek_container">
+            <div class="hitelek_left">
+                <h1>Hitelek</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem deleniti ducimus provident natus,
+                    beatae error rerum tempore ad! Dolores eveniet corrupti mollitia aliquid excepturi nobis harum
+                    molestias animi suscipit quas.</p>
+                <a href="hitelek.html" class="btn btn-hitelek">Összes</a>
+            </div>
+            <div class="hitelek_right">
+                <article class="hitel">
+                    <span class="hitel_icon"><i class="uil uil-user"></i></span>
+                    <h5>Személyi kölcsön</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, obcaecati?</p>
+                </article>
+                <article class="hitel">
+                    <span class="hitel_icon"><i class="uil uil-baby-carriage"></i></span>
+                    <h5>Babaváró kölcsön</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, obcaecati?</p>
+                </article>
+                <article class="hitel">
+                    <span class="hitel_icon"><i class="uil uil-home"></i></span>
+                    <h5>Lakáshitel</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, obcaecati?</p>
+                </article>
+                <article class="hitel">
+                    <span class="hitel_icon"><i class="uil uil-heart"></i></span>
+                    <h5>Támogatott hitelek</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, obcaecati?</p>
+                </article>
+                <article class="hitel">
+                    <span class="hitel_icon"><i class="uil uil-balance-scale"></i></span>
+                    <h5>Adósságrendező hitel</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, obcaecati?</p>
+                </article>
+                <article class="hitel">
+                    <span class="hitel_icon"><i class="uil uil-check"></i></span>
+                    <h5>Hitelkiváltás</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, obcaecati?</p>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- =============== End of Hitelek =============== -->
+    <section class="blog_posts">
+        <h2>Nézz körül a <a href="#" class="blog_link">#blogon</a></h2>
+        <div class="container blog_container">
+            <article class="blog">
+                <div class="blog_img"><img src="./img/bar_lista_nevsora_hogyan_kerulheto_el.jpg" alt="KHR lekérdezés">
                 </div>
-                <div class="bg"><img src="/img/landing.svg" alt=""></div>
-                <div class="social">
-                    <ul>
-                        <li>
-                            <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa-brands fa-whatsapp-square"></i></a>
-                        </li>
-                    </ul>
+                <div class="blog_info">
+                    <h4>KHR lekérdezés, hogyan?</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ipsum eius et illum quia fugit
+                        libero.
+                    </p>
+                    <a href="#" class="btn btn-primary">Elolvasom</a>
                 </div>
-            </div>
-        </div>
-    </section>
-    <!-- Bemutatkozás -->
-    <section id="bemutatkozas">
-        <div class="wrapper">
-            <div class="box">
-                <div class="bemutatkozas">
-                    <div class="content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, consectetur. Aliquam obcaecati
-                            numquam
-                            iste repellendus autem ex illo voluptatem dicta illum atque blanditiis cupiditate sint rem,
-                            veniam
-                            culpa aut ipsum placeat hic. Quia totam ullam necessitatibus hic velit, quaerat doloribus
-                            nostrum
-                            dolore eaque, porro nemo officiis aperiam molestiae. Totam voluptatem architecto nesciunt
-                            illo
-                            quibusdam dolorem porro natus nemo vitae, ex accusantium, minus earum animi modi inventore
-                            assumenda
-                            maiores saepe. Eius animi ullam reiciendis aliquid optio, molestias id quidem odit magni
-                            laboriosam
-                            facere accusantium possimus est explicabo veniam totam incidunt saepe neque. Aspernatur
-                            architecto
-                            saepe ipsum earum, pariatur excepturi, officia ea a labore neque repellat hic ipsam omnis
-                            tempora
-                            temporibus quam non, consectetur expedita nostrum. Ratione asperiores dignissimos accusamus
-                            minus
-                            alias. Tenetur doloremque nostrum consequatur officia non, aspernatur sed excepturi porro,
-                            omnis
-                            est
-                            aperiam libero aliquam alias sequi dolores quam incidunt maxime perspiciatis deserunt
-                            reprehenderit
-                            labore, id ad? Repellat, debitis numquam!</p>
-                    </div>
-                    <div class="list">
-                        <ul>
-                            <li>
-                                <h2><i class="fa-solid fa-square-check"></i>
-                                    Ingyenes</h2>
-                            </li>
-                            <li>
-                                <h2><i class="fa-solid fa-square-check"></i>
-                                    Kényelmes</h2>
-                            </li>
-                            <li>
-                                <h2><i class="fa-solid fa-square-check"></i>
-                                    Gyors</h2>
-                            </li>
-                            <li>
-                                <h2><i class="fa-solid fa-square-check"></i>
-                                    Személyes</h2>
-                            </li>
-                        </ul>
-                    </div>
+            </article>
+            <article class="blog">
+                <div class="blog_img"><img src="./img/bar_lista_nevsora_hogyan_kerulheto_el.jpg" alt="KHR lekérdezés">
                 </div>
-            </div>
+                <div class="blog_info">
+                    <h4>KHR lekérdezés, hogyan?</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ipsum eius et illum quia fugit
+                        libero.
+                    </p>
+                    <a href="#" class="btn btn-primary">Elolvasom</a>
+                </div>
+            </article>
+            <article class="blog">
+                <div class="blog_img"><img src="./img/bar_lista_nevsora_hogyan_kerulheto_el.jpg" alt="KHR lekérdezés">
+                </div>
+                <div class="blog_info">
+                    <h4>KHR lekérdezés, hogyan?</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ipsum eius et illum quia fugit
+                        libero.
+                    </p>
+                    <a href="#" class="btn btn-primary">Elolvasom</a>
+                </div>
+            </article>
         </div>
     </section>
-    <!-- Hitel -->
-    <section id="hitel">
-        <div class="wrapper">
-            <div class="grid-container">
-                <a href="#">
-                    <div class="grid-item wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.4s"><i
-                            class="fa-solid fa-person"></i>
-                        <h3>Személyi kölcsön</h3>
-                        <p>Ingatlanfedezet nélkül nyújtott szabadon felhasználható hitel</p>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="grid-item wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s"><i
-                            class="fa-solid fa-baby-carriage"></i>
-                        <h3>Babaváró kölcsön</h3>
-                        <p>Kamattámogatott, ingatlan fedezett nélkül nyújtott szabadon felhasználható hitel</p>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="grid-item wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.6s"><i
-                            class="fa-solid fa-house"></i>
-                        <h3>Lakáshitel</h3>
-                        <p>Lakáscél megvalósításához és ingatlan fedezet mellett igényelhető hitelek</p>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="grid-item wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.7s"><i
-                            class="fa-solid fa-heart"></i>
-                        <h3>Támogatott hietelek</h3>
-                        <p>Állami és egyéb támogatás mellett nyújtott hietelek, vissza nem térítendő támogatások</p>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="grid-item wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.8s">
-                        <i class="fa-solid fa-credit-card"></i>
-                        <h3>Hitelkártya</h3>
-                        <p>Bank által biztosított kártyával felhasználható megújuló hitelkeret pénz visszatérítéssel</p>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="grid-item wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.9s"><i
-                            class="fa-solid fa-chart-simple"></i>
-                        <h3>Folyószámlahitel</h3>
-                        <p>Bankszámla mellé nyújtott szabadon felhasználható megújuló hitelkeret</p>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="grid-item wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s"><i
-                            class="fa-solid fa-hand-holding-dollar"></i>
-                        <h3>Adósságrendező hitel</h3>
-                        <p>Meglévő hitelek kedvezőbb konstrukcióval rendelkező kölcsönnel történő kiváltása</p>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="grid-item wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1.1s"><i
-                            class="fa-solid fa-circle-check"></i>
-                        <h3>Hitelkiváltás</h3>
-                        <p>Banki és államilag támogatott hitelek cégek és egyéni vállalkozók számára</p>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="grid-item wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1.2s"><i
-                            class="fa-solid fa-building"></i>
-                        <h3>Vállalati hitelek</h3>
-                        <p>Banki és államilag támogatott hitelek cégek és egyéni vállalkozók számára</p>
-                    </div>
-                </a>
-            </div>
-            <div class="help wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="2.8s"><a href="">Nem
-                    találod amit
-                    keresel? Írj nekünk, segítünk!</a></div>
+    <!-- =============== End of Blog =============== -->
+    <section class="faqs">
+        <h2>Gyakran ismételt kérdések</h2>
+        <div class="container faqs_container">
+            <article class="faq">
+                <div class="faq_icon"><i class="uil uil-plus"></i></div>
+                <div class="question_answer">
+                    <h4>Mennyibe kerül ez nekem?</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur alias, dicta totam quas
+                        non odit deserunt eaque hic animi cum, recusandae vero laboriosam assumenda debitis quibusdam
+                        sed necessitatibus natus omnis.
+                    </p>
+                </div>
+            </article>
+            <article class="faq">
+                <div class="faq_icon"><i class="uil uil-plus"></i></div>
+                <div class="question_answer">
+                    <h4>Mennyibe kerül ez nekem?</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur alias, dicta totam quas
+                        non odit deserunt eaque hic animi cum, recusandae vero laboriosam assumenda debitis quibusdam
+                        sed necessitatibus natus omnis.
+                    </p>
+                </div>
+            </article>
+            <article class="faq">
+                <div class="faq_icon"><i class="uil uil-plus"></i></div>
+                <div class="question_answer">
+                    <h4>Mennyibe kerül ez nekem?</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur alias, dicta totam quas
+                        non odit deserunt eaque hic animi cum, recusandae vero laboriosam assumenda debitis quibusdam
+                        sed necessitatibus natus omnis.
+                    </p>
+                </div>
+            </article>
+            <article class="faq">
+                <div class="faq_icon"><i class="uil uil-plus"></i></div>
+                <div class="question_answer">
+                    <h4>Mennyibe kerül ez nekem?</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur alias, dicta totam quas
+                        non odit deserunt eaque hic animi cum, recusandae vero laboriosam assumenda debitis quibusdam
+                        sed necessitatibus natus omnis.
+                    </p>
+                </div>
+            </article>
+            <article class="faq">
+                <div class="faq_icon"><i class="uil uil-plus"></i></div>
+                <div class="question_answer">
+                    <h4>Mennyibe kerül ez nekem?</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur alias, dicta totam quas
+                        non odit deserunt eaque hic animi cum, recusandae vero laboriosam assumenda debitis quibusdam
+                        sed necessitatibus natus omnis.
+                    </p>
+                </div>
+            </article>
+            <article class="faq">
+                <div class="faq_icon"><i class="uil uil-plus"></i></div>
+                <div class="question_answer">
+                    <h4>Mennyibe kerül ez nekem?</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur alias, dicta totam quas
+                        non odit deserunt eaque hic animi cum, recusandae vero laboriosam assumenda debitis quibusdam
+                        sed necessitatibus natus omnis.
+                    </p>
+                </div>
+            </article>
+            <article class="faq">
+                <div class="faq_icon"><i class="uil uil-plus"></i></div>
+                <div class="question_answer">
+                    <h4>Mennyibe kerül ez nekem?</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur alias, dicta totam quas
+                        non odit deserunt eaque hic animi cum, recusandae vero laboriosam assumenda debitis quibusdam
+                        sed necessitatibus natus omnis.
+                    </p>
+                </div>
+            </article>
+            <article class="faq">
+                <div class="faq_icon"><i class="uil uil-plus"></i></div>
+                <div class="question_answer">
+                    <h4>Mennyibe kerül ez nekem?</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur alias, dicta totam quas
+                        non odit deserunt eaque hic animi cum, recusandae vero laboriosam assumenda debitis quibusdam
+                        sed necessitatibus natus omnis.
+                    </p>
+                </div>
+            </article>
         </div>
     </section>
-    <!-- Bankszámla -->
-    <section id="bankszamla">
-        <div class="wrapper">
-            <div class="center-text">
-                <h1>Lecsökkentjük bankszámla költségeit!</h1>
-                <span class="count number"></span>Ft
+    <!-- =============== End of FAQs =============== -->
+    <section class="container testimonials_container mySwiper">
+        <h2>Rólunk mondták</h2>
+        <div class="swiper-wrapper">
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./img/64c9c78b19101eadf6e459ddbb0fd69a.jpg" alt="Profilkép">
+                </div>
+                <div class="testimonial_info">
+                    <h5>Diana Ayi</h5>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial_body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, earum quaerat. Magnam commodi
+                        magni nulla dolor vitae. Accusamus laudantium, harum eius magni, perspiciatis officiis
+                        praesentium amet fugiat nostrum voluptatem ipsum.</p>
+                </div>
+            </article>
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./img/64c9c78b19101eadf6e459ddbb0fd69a.jpg" alt="Profilkép">
+                </div>
+                <div class="testimonial_info">
+                    <h5>Diana Ayi</h5>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial_body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, earum quaerat. Magnam commodi
+                        magni nulla dolor vitae. Accusamus laudantium, harum eius magni, perspiciatis officiis
+                        praesentium amet fugiat nostrum voluptatem ipsum.</p>
+                </div>
+            </article>
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./img/64c9c78b19101eadf6e459ddbb0fd69a.jpg" alt="Profilkép">
+                </div>
+                <div class="testimonial_info">
+                    <h5>Diana Ayi</h5>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial_body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, earum quaerat. Magnam commodi
+                        magni nulla dolor vitae. Accusamus laudantium, harum eius magni, perspiciatis officiis
+                        praesentium amet fugiat nostrum voluptatem ipsum.</p>
+                </div>
+            </article>
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./img/64c9c78b19101eadf6e459ddbb0fd69a.jpg" alt="Profilkép">
+                </div>
+                <div class="testimonial_info">
+                    <h5>Diana Ayi</h5>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial_body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, earum quaerat. Magnam commodi
+                        magni nulla dolor vitae. Accusamus laudantium, harum eius magni, perspiciatis officiis
+                        praesentium amet fugiat nostrum voluptatem ipsum.</p>
+                </div>
+            </article>
+        </div>
+        <div class="swiper-pagination"></div>
+    </section>
+    <!-- =============== End of Testimonials =============== -->
+    <footer class="footer">
+        <div class="container footer_container">
+            <div class="footer_1">
+                <a href="index.html" class="footer_logo">
+                    <h4>hitel<span>.</span>es</h4>
+                </a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, quasi?</p>
+            </div>
+            <div class="footer_2">
+                <h4>Permalinks</h4>
+                <ul class="permalinks">
+                    <li><a href="index.html">Kezdőlap</a></li>
+                    <li><a href="bemutatkozas.html">Bemutatkozás</a></li>
+                    <li><a href="hitelek.html">Hitelek</a></li>
+                    <li><a href="kapcsolat.html">Kapcsolat</a></li>
+                </ul>
+            </div>
+            <div class="footer_3">
+                <h4>Privacy</h4>
+                <ul class="privacy">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms and conditions</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer_4">
+                <h4>Elérhetőségek</h4>
+                <div>
+                    <p>+36 20 599 5674</p>
+                    <p>hello@hiteles.hu</p>
+                </div>
+                <ul class="footer_socials">
+                    <li><a href="#"><i class="uil uil-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="uil uil-instagram"></i></a></li>
+                    <li><a href="#"><i class="uil uil-twitter"></i></a></li>
+                    <li><a href="#"><i class="uil uil-whatsapp"></i></a></li>
+                </ul>
             </div>
         </div>
-    </section>
-    <!-- Script -->
-    <script src="js/main.js"></script>
-    <script src="js/wow.js"></script>
+        <div class="footer_copyright">
+            <small>Copyright &copy; hitel.es</small>
+        </div>
+    </footer>
+    <!-- =============== End of Footer =============== -->
+
+
+
+
+    <!-- Main JS -->
+    <script src="./js/main.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="./js/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
     <script>
-        new WOW().init();
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            // when window width is >= 600px
+            breakpoints: {
+                600: {
+                    slidesPerView: 2
+                }
+            }
+        });
     </script>
 </body>
 

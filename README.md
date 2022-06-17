@@ -1,1 +1,0 @@
-# ggorcz.github.io
