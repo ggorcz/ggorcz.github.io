@@ -160,7 +160,7 @@ nav {
     width: 10rem;
     height: 100%;
     position: absolute;
-    background: var(--color-bg);
+    background: var(--color-danger);
     z-index: 2;
     padding: 0 15px;
     opacity: 0;
@@ -168,14 +168,14 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    color: var(--color-white);
+    color: var(--color-white) !important;
 }
 
 .phone .tooltip::before {
     content: "";
     width: 1.3rem;
     height: 1.3rem;
-    background: var(--color-bg);
+    background: var(--color-danger);
     border-radius: 3px;
     position: absolute;
     left: 50%;
