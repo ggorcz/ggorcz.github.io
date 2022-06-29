@@ -183,6 +183,7 @@ nav {
     top: -8px;
     transform: rotate(45deg);
     z-index: 0;
+    color: var(--color-white) !important;
 }
 
 .phone input {
