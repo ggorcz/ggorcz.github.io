@@ -183,7 +183,6 @@ nav {
     top: -8px;
     transform: rotate(45deg);
     z-index: 0;
-    color: var(--color-white) !important;
 }
 
 .phone input {
@@ -645,7 +644,6 @@ header h1 {
         display: inline-block;
         background: transparent;
         font-size: 1.8rem;
-        color: var(--color-black);
         cursor: pointer;
     }
 
